@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <link type="text/css" rel="stylesheet" href="app.css">
+</head>
+<body>
+<script src="scripts.js" ></script>
+<div class="container text-center" id="calc">
+  <div class="calcBG text-center">
+    <div class="row">
+      <small>Calculadora</small>
+    </div>
+    <div class="row" id="result">
+      <form name="calc">
+        <input type="number" class="input text-right" name="input1" >
+        <input type="number" class="input text-right" name="input2" >
+        <input type="text" class="result text-right" name="result" readonly>
+      </form>
+    </div>
+    <div class="row">
+      <button id="clear" type="button" class="btn btn-warning" onclick="clearScreen()">CE</button>
+    </div>
+    <div class="row">
+      <button class="btn btn-info" onclick="sumar()">+</button>
+      <button class="btn btn-info" onclick="restar()">-</button>        
+      <button class="btn btn-info" onclick="multiplicar()">x</button>
+      <button class="btn btn-info" onclick="dividir()">÷</button>    
+    </div>      
+  </div>
+</div>
+</body>
+</html>
